@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<!--<meta name="referrer" content="no-referrer" />-->
+	<meta name="keywords" content="超级计算，闲置资源" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<title>超算网</title>
+	<link rel="stylesheet" type="text/css" href="lib/pure/pure-min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/media.css"/>
+	<link rel="stylesheet" type="text/css" href="lib/pure/grids-responsive-min.css"/>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap-slider/dist/css/bootstrap-slider.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+	<div id="content"></div>
+	<script id="template" type="text/template7">
+		<div id="main">
+			<div class="header">
+				<div class="menu wrapper">
+					<div class="clear header-top">
+						<div class="float-left">
+							<i class="home-logo"></i>
+						</div>
+						<!--<div class="header-top-right float-right header-top-mobile">
+							<i class="icon-menu"></i>
+							<ul class="nav-menu clear color-white">
+								<li class="item-team"><a href="javascript:void(0);">{{menu_team}}</a></li>
+								<li class="item-route"><a href="javascript:void(0);">{{menu_map}}</a></li>
+								<li class="item-contact"><a href="javascript:void(0);">{{menu_contact}}</a></li>
+								<li class="nav-menu-item item-language">
+									<div class="choose-language">
+										<ul>
+											<li data-country="zh" data-lang="zh" data-index="0"><img src="img/lang/zh.png" alt="" /></li>
+											<li data-country="us" data-lang="en" data-index="1"><img src="img/lang/us.png" alt="" /></li>
+											<li data-country="uk" data-lang="en" data-index="2"><img src="img/lang/uk.png" alt="" /></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>-->
+						<div class="header-top-right float-right header-top-desk">
+							<a href="javascript:;"><i class="icon-menu"></i></a>
+							<ul class="nav-menu clear color-white">
+								<i class="icon-close" href="javascript:;"></i>
+								<!--<li class="nav-menu-item item-index"><a href="javascript:void(0);">{{menu_1}}</a></li>-->
+								<li class="item-scenario"><a href="javascript:void(0);">{{menu_app}}</a></li>
+								<li class="item-route"><a href="javascript:void(0);">{{menu_map}}</a></li>
+								<li class="item-team"><a href="javascript:void(0);">{{menu_team}}</a></li>
+								<li class="item-contact"><a href="javascript:void(0);">{{menu_contact}}</a></li>
+								<li class="nav-menu-item item-language" style="margin-top: -1px;">
+									<!--<a href="javascript:void(0);">语言</a>-->
+									<div class="choose-language">
+										<ul>
+											<!--<li data-country="zh" data-lang="zh" data-index="0"><img src="img/lang/zh.png" alt="" /></li>
+											<li data-country="us" data-lang="en" data-index="1"><img src="img/lang/us.png" alt="" /></li>
+											<li data-country="uk" data-lang="en" data-index="2"><img src="img/lang/uk.png" alt="" /></li>-->
+											<li data-country="zh" data-lang="zh" data-index="0">中文</li>
+											<li data-country="us" data-lang="en" data-index="1">English</li>
+										</ul>
+									</div>
+								</li>
+								<li class="item-social">
+									<a href="https://twitter.com/ZeusNetChain" target="new"><i class="icon-twitter"></i></a>
+									<a href="https://www.facebook.com/zeusnet.chain" target="new"><i class="icon-facebook"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="header-content clear">
+					<div class="wrapper pure-g">
+						<div class="float-left">
+							<h1>{{banner_title}}</h1>
+							<h2>{{ banner_sub_title }}</h2>
+							<p>{{banner_sub_title_content}}</p>
+							<div class="white-papaer">
+								<a href="javascript:;" class="bg-primary">{{white_paper_donwnload}}</a>
+							</div>
+						</div>
+						<div class="float-right">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section1">
+				<div class="wrapper">
+					<div class="section-title">{{section1_title}}</div>
+					<div class="section-sub-title">{{section1_sub_title}}</div>
+					<div class="concept">
+						<div class="pure-g">
+							<div class="pure-u-md-1-3 pure-u-xs-1-1">
+								<i class="icon-a1"></i>
+								<h4>{{zeusnet_feature1_title}}</h4>
+								<h6>{{zeusnet_feature1_subtitle}}</h6>
+								<p>{{zeusnet_feature1_content}}</p>
+							</div>
+							<div class="pure-u-md-1-3 pure-u-xs-1-1">
+								<i class="icon-a2"></i>
+								<h4>{{zeusnet_feature2_title}}</h4>
+								<h6>{{zeusnet_feature2_subtitle}}</h6>
+								<p>{{zeusnet_feature2_content}}</p>
+							</div>
+							<div class="pure-u-md-1-3 pure-u-xs-1-1">
+								<i class="icon-a3"></i>
+								<h4>{{zeusnet_feature3_title }}</h4>
+								<h6>{{zeusnet_feature3_subtitle}}</h6>
+								<p>{{zeusnet_feature3_content}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section2">
+				<div class="section2-inner"></div>
+				<div class="wrapper">
+					<div class="vertical-divide-line"></div>
+					<div class="pure-g">
+						<div class="pure-u-md-1-2 pure-u-xs-1">
+							<h5 class="text-right">{{section2_supply_title}}</h5>
+							<h6 class="text-right">{{section2_supply_subtitle }}</h6>
+							<p class="text-right">{{section2_supply_content}}</p>
+						</div>
+						<div class="pure-u-md-1-2 pure-u-xs-1">
+							<h5>{{section2_requirement_title }}</h5>
+							<h6>{{section2_requirement_subtitle}}</h6>
+							<p class="">{{section2_requirement_content}}</p>
+						</div>
+					</div>				
+				</div>
+			</div>
+			<div class="section section3">
+				<div class="wrapper">
+					<div class="section-sub-title">{{section3_subtitle1}}</div>
+			        <div class="section-title">{{section3_title}}</div>
+			        <div class="section-sub-title">{{section3_subtitle2}}</div>
+			        <div class="pure-g">
+			        	<div class="pure-u-md-1-3 pure-u-xs-1">
+				        		<div class="chain-item clear">
+				        			<div class="float-left">
+				        				<i class="icon-c1"></i>
+				        			</div>
+				        			<div class="float-right">
+				        				<div class="chain-item-title">{{zeusnetchain_feature4_title}}</div>
+				        				<div class="chain-item-content">
+				        					{{zeusnetchain_feature4_content}}
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
+				        	<div class="pure-u-md-1-3 pure-u-xs-1">
+				        		<div class="chain-item clear">
+				        			<div class="float-left">
+				        				<i class="icon-c2"></i>
+				        			</div>
+				        			<div class="float-right">
+				        				<div class="chain-item-title">{{zeusnetchain_feature5_title}}</div>
+				        				<div class="chain-item-content">
+				        					{{zeusnetchain_feature5_content}}
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
+				        	<div class="pure-u-md-1-3 pure-u-xs-1">
+				        		<div class="chain-item clear">
+				        			<div class="float-left">
+				        				<i class="icon-c3"></i>
+				        			</div>
+				        			<div class="float-right">
+				        				<div class="chain-item-title">{{zeusnetchain_feature6_title}}</div>
+				        				<div class="chain-item-content">
+				        					{{zeusnetchain_feature6_content}}
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
+				        	<div class="pure-u-md-1-3 pure-u-xs-1">
+				        		<div class="chain-item clear">
+				        			<div class="float-left">
+				        				<i class="icon-b1"></i>
+				        			</div>
+				        			<div class="float-right">
+				        				<div class="chain-item-title">{{zeusnetchain_feature1_title}}</div>
+				        				<div class="chain-item-content">
+				        					{{zeusnetchain_feature1_content}}
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
+				        		<div class="pure-u-md-1-3 pure-u-xs-1">
+				        		<div class="chain-item clear">
+				        			<div class="float-left">
+				        				<i class="icon-b2"></i>
+				        			</div>
+				        			<div class="float-right">
+				        				<div class="chain-item-title">{{zeusnetchain_feature2_title}}</div>
+				        				<div class="chain-item-content">
+				        					{{zeusnetchain_feature2_content}}
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
+				        	<!--<div class="pure-u-md-1-3 pure-u-xs-1">
+				        		<div class="chain-item clear">
+				        			<div class="float-left">
+				        				<i class="icon-b3"></i>
+				        			</div>
+				        			<div class="float-right">
+				        				<div class="chain-item-title">{{zeusnetchain_feature3_title}}</div>
+				        				<div class="chain-item-content">
+				        					{{zeusnetchain_feature3_content }}
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>-->
+				        	<div class="pure-u-md-1-3 pure-u-xs-1">
+				        		<div class="chain-item clear">
+				        			<div class="float-left">
+				        				<i class="icon-d1"></i>
+				        			</div>
+				        			<div class="float-right">
+				        				<div class="chain-item-title">{{zeusnetchain_feature7_title}}</div>
+				        				<div class="chain-item-content">
+				        					{{zeusnetchain_feature7_content}}
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
+			        </div>
+				</div>
+			</div>
+			<div class="section section4">
+				<div class="wrapper">
+					<div class="section-sub-title">{{section4_subtitle1}}</div>
+			        <div class="section-title">{{section4_title }}</div>
+			        <div class="section-sub-title">{{section4_subtitle2 }}</div>
+				    <div class="coin-content">
+				    		<p>{{section4_content_line1}}</p>
+				         <p>{{section4_content_line2}}</p>
+				        <p style="padding-top: 30px;">{{section4_content_line3}}</p>
+				        <p>{{section4_content_line4}}</p>
+				        <p>{{section4_content_line5}}</p>
+				        <p>{{section4_content_line6}}</p>
+				    </div>
+				</div>
+			</div>
+			<div class="section section6" id="scenario">
+				<div class="section-title">{{section6_title}}</div>
+				<div class="section-sub-title">{{section6_subtitle}}</div>
+				<div class="wrapper">
+					<div class="supercomputing-feature">
+						<div class="feature-bg feature-bg1"></div>
+						<div class="feature-bg feature-bg2"></div>
+						<div class="feature-bg feature-bg3"></div>
+						<div class="feature-bg feature-bg4"></div>
+						<div class="feature-bg feature-bg5"></div>
+						<div class="feature-bg feature-bg6"></div>
+						<div class="feature-bg feature-bg7"></div>
+					</div>
+					<div class="circle-group">
+						<div class="circle1 circle"><div class="circle-inner"></div><div class="dot"></div></div>
+						<div class="circle2 circle active"><div class="circle-inner"></div><div class="dot"></div></div>
+						<div class="circle3 circle"><div class="circle-inner"></div><div class="dot"></div></div>
+						<div class="circle4 circle active2"><div class="circle-inner"></div><div class="dot"></div></div>
+						<div class="circle5 circle"><div class="circle-inner"></div><div class="dot"></div></div>
+						<div class="circle6 circle active1"><div class="circle-inner"></div><div class="dot"></div></div>
+						<div class="circle7 circle"><div class="circle-inner"></div><div class="dot"></div></div>
+						<div class="circle8 circle"><div class="circle-inner"></div><div class="dot"></div></div>
+						<div class="circle9 circle active3"><div class="circle-inner"></div><div class="dot"></div></div>
+						<div class="circle10 circle"><div class="circle-inner"></div><div class="dot"></div></div>
+					</div>
+					<div class="feature-content-group">
+						<div class="feature-content-item feature-content-item1">
+							<div class="feature-content-title">
+								{{section6_feature1_title}}
+							</div>
+							<div class="feature-content-main">
+								<p>{{section6_feature1_content}}</p>
+							</div>
+						</div>
+						<div class="feature-content-item feature-content-item2">
+							<div class="feature-content-title">
+								{{section6_feature2_title}}
+							</div>
+							<div class="feature-content-main">
+								<p>{{section6_feature2_content}}</p>
+							</div>
+						</div>
+						<div class="feature-content-item feature-content-item3">
+							<div class="feature-content-title">
+								{{section6_feature3_title}}
+							</div>
+							<div class="feature-content-main">
+								<p>{{section6_feature3_content}}</p>
+							</div>
+						</div>
+						<div class="feature-content-item feature-content-item4">
+							<div class="feature-content-title">
+								{{section6_feature4_title}}
+							</div>
+							<div class="feature-content-main">
+								<p>{{section6_feature4_content}}</p>
+							</div>
+						</div>
+						<div class="feature-content-item feature-content-item5">
+							<div class="feature-content-title">
+								{{section6_feature5_title}}
+							</div>
+							<div class="feature-content-main">
+								<p>{{section6_feature5_content}}</p>
+							</div>
+						</div>
+						<div class="feature-content-item feature-content-item6">
+							<div class="feature-content-title">
+								{{section6_feature6_title}}
+							</div>
+							<div class="feature-content-main">
+								<p>{{section6_feature6_content}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section5">
+				<div class="wrapper">
+					<div class="section-title">{{section5_title}}</div>
+					<div class="section-sub-title">{{section5_subtitle }}</div>
+					<div class="clear pure-g">
+						<div class="pure-u-md-1-3 pure-u-xs-1">
+							<div class="earning-item day-earning">
+								<h4>{{day_earning }}</h4>
+								<div class="day-earning-value">{{unit}} <span>0.065</span></div>
+							</div>
+						</div>
+						<div class="pure-u-md-1-3 pure-u-xs-1">
+							<div class="earning-item week-earning">
+								<h4>{{week_earning }}</h4>
+								<div class="week-earning-value">{{unit}} <span>0.455</span></div>
+							</div>
+						</div>
+						<div class="pure-u-md-1-3 pure-u-xs-1">
+							<div class="earning-item month-earning">
+								<h4>{{month_earning }}</h4>
+								<div class="month-earning-value">{{unit}} <span>1.950</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="pure-g earning">
+						<div class="pure-u-lg-1-2 pure-u-md-1-1 pure-u-sm-1 pure-u-xs-1">
+							<div>
+								<div class="speed-slider-title">{{upload_speed}}</div>
+								<input id="speed" data-slider-id='speedSlider' type="text" data-slider-min="1" data-slider-max="1024" data-slider-step="1" data-slider-value="1"/>
+								<div class="speed-value"><span>1</span> Mbps</div>
+							</div>
+						</div>
+						<div class="pure-u-lg-1-2 pure-u-md-1-1 pure-u-sm-1 pure-u-xs-1">
+							<div class="time-slider-title">{{upload_time}}</div>
+							<input id="time" data-slider-id='timeSlider' type="number" data-slider-min="1" data-slider-max="24" data-slider-step="1" data-slider-value="1"/>
+							<div class="time-value"><span>1</span> {{upload_time_unit}}</div>
+						</div>
+					</div>
+					<div class="earning-bottom">
+	        		{{earning_desc}}
+					</div>
+				</div>
+			</div>
+			<div class="section section7" id="team">
+				<div class="wrapper">
+					<div class="section-title">{{section7_title}}</div>
+					<div class="section-sub-title">{{section7_subtitle}}</div>
+					<div class="team-group pure-g">
+						<div class="pure-u-md-1-3 team-item1 pure-u-xs-1">
+							<div class="team-inner">
+								<div class="portrait partner1">
+									
+								</div>
+								<div class="partner-name">
+									{{partner1_name}}
+								</div>
+								<div class="partner-duty">
+									{{partner1_position}}
+								</div>
+								<div class="partner-indro">
+									<p>{{partner1_indro}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="pure-u-md-1-3 team-item2 pure-u-xs-1">
+							<div class="team-inner">
+								<div class="portrait partner2">
+									
+								</div>
+								<div class="partner-name">
+									{{partner2_name}}
+								</div>
+								<div class="partner-duty">
+									{{partner2_position}}
+								</div>
+								<div class="partner-indro">
+									<p>{{partner2_indro}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="pure-u-md-1-3 team-item3 pure-u-xs-1">
+							<div class="team-inner">
+								<div class="portrait partner3">
+									
+								</div>
+								<div class="partner-name">
+									{{partner3_name}}
+								</div>
+								<div class="partner-duty">
+									{{partner3_position}}
+								</div>
+								<div class="partner-indro">
+									<p>{{partner3_indro}}</p>
+								</div>
+							</div>
+						</div>
+						<!--<div class="pure-u-md-1-6"></div>-->
+						<div class="pure-u-md-1-3 team-item4 pure-u-xs-1">
+							<div class="team-inner">
+								<div class="portrait partner4">
+									
+								</div>
+								<div class="partner-name">
+									{{partner4_name}}
+								</div>
+								<div class="partner-duty">
+									{{partner4_position}}
+								</div>
+								<div class="partner-indro">
+									<p>{{partner4_indro}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="pure-u-md-1-3 team-item5 pure-u-xs-1">
+							<div class="team-inner">
+								<div class="portrait partner5">
+									
+								</div>
+								<div class="partner-name">
+									{{partner5_name}}
+								</div>
+								<div class="partner-duty">
+									{{partner5_position}}
+								</div>
+								<div class="partner-indro">
+									<p>{{partner5_indro}}</p>
+								</div>
+							</div>
+						</div>
+<!--						<div class="pure-u-md-1-6"></div>-->
+					</div>
+				</div>
+			</div>
+			<div class="section section10" id="consultant">
+				<div class="wrapper">
+					<div class="section-title">{{section10_title}}</div>
+					<div class="section-sub-title">{{section10_subtitle}}</div>
+					<div class="consultant">
+						<div class="pure-g">
+							<div class="pure-u-md-1-3 pure-u-xs-1">
+								<div class="consultant-inner">
+									<div class="portrait consultant1">
+										
+									</div>
+									<div class="consultant-name">
+										{{consultant1_name}}
+									</div>
+									<div class="consultant-duty">
+										{{consultant1_position}}
+									</div>
+									<div class="consultant-indro">
+										<p>{{consultant1_indro}}</p>
+									</div>
+								</div>
+							</div>
+							<div class="pure-u-md-1-3 pure-u-xs-1">
+								<div class="consultant-inner">
+									<div class="portrait consultant2">
+										
+									</div>
+									<div class="consultant-name">
+										{{consultant2_name}}
+									</div>
+									<div class="consultant-duty">
+										{{consultant2_position}}
+									</div>
+									<div class="consultant-indro">
+										<p>{{consultant2_indro}}</p>
+									</div>
+								</div>
+							</div>
+							<div class="pure-u-md-1-3 pure-u-xs-1">
+								<div class="consultant-inner">
+									<div class="portrait consultant3">
+										
+									</div>
+									<div class="consultant-name">
+										{{consultant3_name}}
+									</div>
+									<div class="consultant-duty">
+										{{consultant3_position}}
+									</div>
+									<div class="consultant-indro">
+										<p>{{consultant3_indro}}</p>
+									</div>
+								</div>
+							</div>
+							<div class="pure-u-md-1-3 pure-u-xs-1">
+								<div class="consultant-inner">
+									<div class="portrait consultant4">
+										
+									</div>
+									<div class="consultant-name">
+										{{consultant4_name}}
+									</div>
+									<div class="consultant-duty">
+										{{consultant4_position}}
+									</div>
+									<div class="consultant-indro">
+										<p>{{consultant4_indro}}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section8">
+				<div class="wrapper">
+					<div class="section-title">{{section8_title}}</div>
+					<div class="section-sub-title">{{section8_subtitle}}</div>
+					<div class="cooperation pure-g">
+						<div class="pure-u-md-1-5 pure-u-xs-1">
+							<img src="img/cooperation/yunyou.png" alt="" />
+						</div>
+						<div class="pure-u-md-1-5 pure-u-xs-1">
+							<img src="img/cooperation/ali.png" alt="" />
+						</div>
+						<div class="pure-u-md-1-5 pure-u-xs-1">
+							<img src="img/cooperation/aws.png" alt="" />
+						</div>
+						<div class="pure-u-md-1-5 pure-u-xs-1">
+							<img src="img/cooperation/microsoft.png" alt="" />
+						</div>
+						<div class="pure-u-md-1-5 pure-u-xs-1">
+							<img src="img/cooperation/onvideo.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section9" id="route">
+				<div class="wrapper">
+					<div class="section-title">{{section9_title}}</div>
+					<div class="section-sub-title">{{section9_subtitle}}</div>
+					<div class="route-wrapper">
+						<img src={{roadmap}} alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="footer" id="contact">
+				<div class="wrapper">
+					<div class="footer-inner">
+						<div class="clear">
+							<div class="float-left">
+								<i class="icon-logo-white"></i>
+							</div>
+							<div class="float-right">
+								<a href="https://twitter.com/ZeusNetChain" target="new"><i class="icon-twitter"></i></a>
+								<a href="https://www.facebook.com/zeusnet.chain" target="new"><i class="icon-facebook"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--<div class="section section10">
+				<div class="wrapper"></div>
+			</div>-->
+			<div id="backtop">
+				<div class="backtop-inner">
+					
+				</div>
+			</div>
+		</div>
+	</script>
+	<script src="lib/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/jquery-i18n-properties/jquery.i18n.properties.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/jquery.scrollto/jquery.scrollTo.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/bootstrap-slider/dist/bootstrap-slider.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/template7/dist/template7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/language.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
