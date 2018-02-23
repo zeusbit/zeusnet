@@ -13,7 +13,7 @@ function initLanguae (lang,country,index) {
 		lang = 'en';
 	}
 	if (!index) {
-		index = localStorage.getItem('countryIndex') || '';
+		index = localStorage.getItem('countryIndex') || '1';
 	}
 	jQuery.i18n.properties({
 		name: 'strings', //资源文件名称
@@ -40,7 +40,7 @@ function initLanguae (lang,country,index) {
 			}
 			render(languageMap);
 			index = index.toString();
-			if (!index || !index.match(/^\d{1}$/)) {
+			if (!index || !index.match(/^\d$/)) {
 				index = 0;
 			}else {
 				index = index * 1;
