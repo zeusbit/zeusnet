@@ -1104,7 +1104,7 @@ a {
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#5a306f, endColorstr=#303c62);/*IE<9>*/
 	position: relative;
 }
-.icon-twitter,.icon-facebook {
+.icon-twitter,.icon-facebook,.icon-gmail {
 	display: inline-block;
 	vertical-align: middle;
 	width: 36px;
@@ -1136,6 +1136,12 @@ a {
 }
 .icon-facebook:hover {
 	background-image: url(../img/footer/facebook_on.png);
+}
+.icon-gmail {
+	background-image: url(../img/footer/mail_off.png);
+}
+.icon-gmail:hover {
+	background-image: url(../img/footer/mail_on.png);
 }
 /*#backtop*/
 #backtop {
