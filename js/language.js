@@ -27,7 +27,7 @@ function initLanguae (lang,country,index) {
 			if (!languageMap.menu_index) {
 				initLanguae('zh');
 			}
-			if (lang != 'zh' || lang != 'en') {
+			if (lang != 'zh' && lang != 'en') {
 				lang = 'en';
 			}
 			if (lang == 'en') {
@@ -39,13 +39,18 @@ function initLanguae (lang,country,index) {
 				languageMap['unit'] = '¥';
 			}
 			render(languageMap);
+			//加载记录在localStorage里边的语言对应的国旗
+			if (lang == 'en'){
+				index = 1;
+			}else {
+				index = 0;
+			}
 			index = index.toString();
 			if (!index || !index.match(/^\d$/)) {
 				index = 0;
 			}else {
 				index = index * 1;
 			}
-			//加载记录在localStorage里边的语言对应的国旗
 			var target = $('.choose-language ul li').eq(index).siblings();
 //			console.log(index,target);
 			target.remove();

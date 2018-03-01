@@ -1,0 +1,181 @@
+ul, ul li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica,"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+	color: #333;
+	min-width: 1200px;
+	overflow-x: auto;
+}
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+select {
+	outline: none;
+	background: none;
+}
+a {
+	text-decoration: none;
+}
+.clear:before,.clear:after {
+	content:'';
+	display: block;
+	height: 0;
+	clear: both;
+}
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-justify {
+	text-align: justify;
+}
+.text-right {
+	text-align: right;
+}
+.color-primary {
+	color: #5CD1FF;
+}
+.color-white {
+	color: #fff;
+}
+.color-black {
+	color: #333;
+}
+.color-gray {
+	color: #eee;
+}
+.bg-primary {
+	background-color: #5CD1FF;
+}
+.bg-gray {
+	background-color: #F9F9FB;
+}
+.bg-white {
+	background-color: #fff;
+}
+.icon-download {
+	display: inline-block;
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
+	background: url(../img/icon/icon-download.png) no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+/*body*/
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+}
+/*header*/
+.header {
+	height: 50px;
+	background: #26292F;
+}
+.header .logo-wrapper {
+	height: 50px;
+	overflow: hidden;
+}
+.home-logo {
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	overflow: hidden;
+	background: url(../img/logo.png) no-repeat;
+	background-size: 140px;
+	background-position: center;
+}
+.header-right ul li {
+	padding: 0 10px;
+	float: left;
+	line-height: 50px;
+}
+.header-right ul li a {
+	color: #fff;
+}
+/*main*/
+.main {
+	/*margin: 20px;*/
+}
+/*section1*/
+.section1 .pure-g>div {
+	line-height: 2.5em;
+	color: #2b2b2b;
+	padding: 10px 20px 0 20px;
+	position: relative;
+}
+.section1 .pure-g .account-item {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: default;
+}
+.section1 .pure-g>div p {
+	width: 200%;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	background: rgba(0,0,0,1);
+	color: #fff;
+	padding: 10px;
+	z-index: 10;
+	display: none;
+}
+/*.section1 .pure-g>div .account-item:hover ~ p {
+	display: block;
+	top: -50%;
+}*/
+.section1 {
+	margin: 20px 0;
+}
+.explanation {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 100px 0;
+}
+.explanation h3 {
+	font-size: 18px;
+	color: #2b2b2b;
+	line-height: 1.8em;
+}
+.explanation p {
+	font-size: 12px;
+	color: #e97527;
+}
+/*section3*/
+.section3 a {
+	display: block;
+	width: 200px;
+	height: 48px;
+	margin: 0 auto;
+	line-height: 48px;
+	text-align: center;
+	margin-top: 50px;
+	color: #fff;
+	background: #51BBE4;
+	box-shadow: 2px 2px 8px #C7E7F4;
+}
+.section3 .icon-download {
+	margin: 0 10px;
+}
