@@ -30,6 +30,34 @@ $('#content').on('click','.header-top-right>.nav-menu>li',function () {
 		$('.header-top-right>ul').toggle();
 	}
 })
+$('#content').on('click','.team-inner',function () {
+	var width = window.innerWidth;
+	if (width > 640 ) {
+		return;
+	}
+	var img_path = $(this).find('.portrait').css('background-image');
+	var name = $(this).find('.partner-name').html();
+	var indro = $(this).find('.partner-indro p').html();
+//	return;
+	sessionStorage.setItem('img_path',img_path);
+	sessionStorage.setItem('name',name);
+	sessionStorage.setItem('indro',indro);
+	location.assign('./person.html');
+})
+$('#content').on('click','.consultant-inner',function () {
+	var width = window.innerWidth;
+	if (width > 640 ) {
+		return;
+	}
+	var img_path = $(this).find('.portrait').css('background-image');
+	var name = $(this).find('.consultant-name').html();
+	var indro = $(this).find('.consultant-indro p').html();
+//	return;
+	sessionStorage.setItem('img_path',img_path);
+	sessionStorage.setItem('name',name);
+	sessionStorage.setItem('indro',indro);
+	location.assign('./person.html');
+})
 window.onresize = function () {
 	var width = window.innerWidth;
 	if(width>768) {

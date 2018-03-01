@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>超算网</title>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="referrer" content="no-referrer" /> 
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+		<meta name="description" content="" />
+		<link rel="shortcut icon" href="../favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="../lib/pure/pure-min.css"/>
+		<link rel="stylesheet" href="../css/media.css" />
+		<link rel="stylesheet" type="text/css" href="../lib/pure/grids-responsive-min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/prototype.css"/>
+	</head>
+	<body class="bg-gray">
+		<div id="content"></div>
+		<script type="text/template7" id="template">
+			<div class="container">
+				<div class="header">
+					<div class="wrapper clear">
+						<div class="float-left logo-wrapper">
+							<div class="home-logo"></div>
+						</div>
+						<div class="float-right header-right">
+							<ul class="clear">
+								<li>
+									<a href="http://zeusnet.io/index.html">{{menu1}}</a>
+								</li>
+								<li>
+									<a href="http://bc.zeusnet.io/prototype/browser/" target="_blank">{{menu2}}</a>
+								</li>
+								<li>
+									<a href="https://github.com/zeusbit/zeusnet" target="_blank">{{menu3}}</a>
+								</li>
+								<li class="item-language" data-lang={{lang}}>
+									<a href="#">{{menu4}}</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main">
+					<div class="section1 bg-white">
+						<div class="wrapper">
+							<div class="pure-g">
+								<div class="pure-u-md-1-4 pure-u-sm-1 pure-u-xs-1">
+									<div class="account-item">
+										<b>{{account_name}}</b><span>{{account_name_content}}</span>
+									</div>
+								</div>
+								<div class="pure-u-md-1-4 pure-u-sm-1 pure-u-xs-1">
+									<div class="account-item">
+										<b>{{account_type}}</b><span>{{account_type_content}}</span>
+									</div>
+								</div>
+								<div class="pure-u-md-1-4 pure-u-sm-1 pure-u-xs-1">
+									<div class="account-item">
+										<b>{{account_build}}</b>
+										<span>{{account_build_content}}</span>
+									</div>
+								</div>
+								<div class="pure-u-md-1-4 pure-u-sm-1 pure-u-xs-1">
+									<div class="account-item">
+										<b>{{account_id}}</b>
+										<span>{{account_id_content}}</span>
+									</div>
+								</div>
+								<div class="pure-u-md-1-2 pure-u-sm-1 pure-u-xs-1">
+									<div class="account-item">
+										<b>{{account_description}}</b>
+										<span>{{account_description_content}}</span>
+									</div>
+								</div>
+								<div class="pure-u-md-1-2 pure-u-sm-1 pure-u-xs-1">
+									<div class="account-item">
+										<b>{{api_address}}</b>
+										<span>{{api_address_content}}</span>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="section2 bg-white">
+						<div class="wrapper">
+							<div class="explanation">
+								<h3>
+									<div>{{statement1}}</div>
+									<div>{{statement2}}</div>
+								</h3>
+								<p>
+									{{note}}
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="section3">
+						<a href='{{api_document_path}}' target="_blank">{{api_document}}<i class="icon-download"></i></a>
+					</div>
+				</div>
+			</div>
+		</script>
+	</body>
+	<script src="../lib/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/jquery-i18n-properties/jquery.i18n.properties.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/template7/dist/template7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/protoytpe.js" type="text/javascript" charset="utf-8"></script>
+</html>
